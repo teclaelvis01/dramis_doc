@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Modules &mdash; DRAMIS 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Overview" href="overview.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/carrousel_new_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#clinic-authorizations-monitoring-dashboard">Clinic Authorizations Monitoring Dashboard</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#requisitos-iniciales">Requisitos iniciales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#frontend">FrontEnd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#backend">Backend</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#clinic-subsequent-authorizations-management">Clinic Subsequent Authorizations Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Requisitos iniciales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">FrontEnd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Backend</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cbhs-subsequent-authorizations-management">CBHS Subsequent Authorizations Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Requisitos iniciales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">FrontEnd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Backend</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DRAMIS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Modules</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="modules">
+<h1>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="clinic-authorizations-monitoring-dashboard">
+<h2>Clinic Authorizations Monitoring Dashboard<a class="headerlink" href="#clinic-authorizations-monitoring-dashboard" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/camd_dasboard.png" src="_images/camd_dasboard.png" />
+<div class="section" id="requisitos-iniciales">
+<h3>Requisitos iniciales<a class="headerlink" href="#requisitos-iniciales" title="Permalink to this headline">¶</a></h3>
+<p>Las autorizaciones que se deben ver en este dashboard son las siguientes:</p>
+<ul class="simple">
+<li>Autorizaciones activas que les quede menos de 8 unidades</li>
+<li>Autorizaciones activas que vencen en los próximos 15 días</li>
+<li>El “dashboard” debe estar dividido por especialidad OT, PT, ST</li>
+<li>La autorización en el “dashboard” debe tener un link que lleve directo a las autorizaciones del paciente</li>
+<li>Debe tener una columna donde se pueda poner la fecha en que se trabajó la autorización y autómaticamente deje de aparecer en el dashboard</li>
+<li>Las columnas que debe tener son las siguientes</li>
+<li>Debemos poder ver todas las transacciones por localidad de ser necesario (Davenport, St.Cloud)</li>
+</ul>
+<p>Se presentan los archivos incolucrados en este dashboard.</p>
+<div class="section" id="frontend">
+<h4>FrontEnd<a class="headerlink" href="#frontend" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/index.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/js/app.js`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/js/view-components/camdComponent.js`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/patient_file/summary/authorizations_full.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/patient_file/summary/record_authorization.php`</span></code></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="backend">
+<h4>Backend<a class="headerlink" href="#backend" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/index.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/controllers/WpFormController.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/modeles/Authorization.php`</span></code></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Si se desea compilar los archivos del FrontEnd deberá ejecutarse el siguiente comando en la carpeta <code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/`</span></code></p>
+<div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span>npm run build
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="clinic-subsequent-authorizations-management">
+<h2>Clinic Subsequent Authorizations Management<a class="headerlink" href="#clinic-subsequent-authorizations-management" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/csam_dashboard.png" src="_images/csam_dashboard.png" />
+<div class="section" id="id1">
+<h3>Requisitos iniciales<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Este dashboard debe presentar todas las autorizaciones que no estén atadas a un referido y que tengan cualquier estatus menos activa e inactiva.</li>
+<li>La autorización en el “dashboard” debe tener un link que lleve directo a las autorizaciones del paciente</li>
+<li>El “dashboard” debe estar dividido por especialidad OT, PT, ST</li>
+<li>Las columnas que debe tener son las siguientes</li>
+<li>Debemos poder ver todas las transacciones por localidad de ser necesario (Davenport, St.Cloud)</li>
+</ul>
+<p>Se presentan los archivos incolucrados en este dashboard.</p>
+<div class="section" id="id2">
+<h4>FrontEnd<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/index.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/js/app.js`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/js/view-components/csamdComponent.js`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/patient_file/summary/authorizations_full.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/patient_file/summary/record_authorization.php`</span></code></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h4>Backend<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/index.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/controllers/WpFormController.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/modeles/Authorization.php`</span></code></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Si se desea compilar los archivos del FrontEnd deberá ejecutarse el siguiente comando en la carpeta <code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/`</span></code></p>
+<div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span>npm run build
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="cbhs-subsequent-authorizations-management">
+<h2>CBHS Subsequent Authorizations Management<a class="headerlink" href="#cbhs-subsequent-authorizations-management" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/cbhs_dashboard.png" src="_images/cbhs_dashboard.png" />
+<div class="section" id="id4">
+<h3>Requisitos iniciales<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Este dashboard debe presentar todas las autorizaciones que no estén atadas a un referido y que tengan cualquier estatus menos activa e inactiva</li>
+<li>La autorización en el “dashboard” debe tener un link que lleve directo a las autorizaciones del paciente</li>
+<li>El “dashboard” debe estar dividido por especialidad TCM, PSR, MHC</li>
+<li>Las columnas que debe tener son las siguientes</li>
+<li>Debemos poder ver todas las transacciones por localidad de ser necesario (Davenport, St.Cloud) (Es una columna adicional o un filtro )</li>
+<li>Poner como editable todas las columnas que se puedan editar y que los cambios puedan actualizar el récord del paciente.</li>
+</ul>
+<p>Se presentan los archivos incolucrados en este dashboard.</p>
+<div class="section" id="id5">
+<h4>FrontEnd<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/index.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/js/app.js`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/js/view-components/cbhssamComponent.js`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/patient_file/summary/authorizations_full.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/patient_file/summary/record_authorization.php`</span></code></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h4>Backend<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/index.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/controllers/WpFormController.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/api/modeles/Authorization.php`</span></code></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Si se desea compilar los archivos del FrontEnd deberá ejecutarse el siguiente comando en la carpeta <code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/`</span></code></p>
+<div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span>npm run build
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="overview.html" class="btn btn-neutral" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Ing. Elvis Reyes.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

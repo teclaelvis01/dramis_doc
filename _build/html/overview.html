@@ -1,0 +1,575 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Overview &mdash; DRAMIS 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Modules" href="modules.html" />
+    <link rel="prev" title="DRAMIS Referrals Authorizations Module" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/carrousel_new_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requerimientos">Requerimientos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacion">Instalación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#repositorio">Repositorio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#node-opcional">Node (Opcional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#npm-opcional">Npm (Opcional)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#actualizacion-base-de-datos">Actualización base de Datos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#authorizations">authorizations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fields">fields</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#referrals-new">referrals (new)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">fields</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#referral-services-new-all-fields-read-write">referral_services (new) all fields read/write</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">fields</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#patient-staff-assignment-all-fields-read">patient_staff_assignment all fields read</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">fields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#insurance-companies-all-fields-read">insurance_companies all fields read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#patient-data-all-fields-read">patient_data all fields read</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#modificacion-de-base-de-datos-alters">Modificación de base de datos (alters)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#inventario-de-archivos-modificados">Inventario de archivos modificados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frontend-compiler">FrontEnd Compiler</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DRAMIS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="requerimientos">
+<h2>Requerimientos<a class="headerlink" href="#requerimientos" title="Permalink to this headline">¶</a></h2>
+<p>Ambiente de desarrollo.</p>
+<ul class="simple">
+<li>Vagrant <a class="reference external" href="https://releases.hashicorp.com/vagrant/2.0.1/">v 2.0.1</a></li>
+<li>Virtualbox <a class="reference external" href="https://www.virtualbox.org/wiki/Download_Old_Builds_5_0">v 5.0.20</a></li>
+<li>PHP 5.6.32</li>
+<li>MariaDB <code class="docutils literal notranslate"><span class="pre">Server</span> <span class="pre">v:</span> <span class="pre">10.0.33-MariaDB</span> <span class="pre">MariaDB</span> <span class="pre">Server</span></code></li>
+<li>Git <code class="docutils literal notranslate"><span class="pre">v</span> <span class="pre">1.7.1</span></code></li>
+<li>Composer <code class="docutils literal notranslate"><span class="pre">v</span> <span class="pre">1.6.2</span></code></li>
+<li>Node <code class="docutils literal notranslate"><span class="pre">v</span> <span class="pre">6.12.3</span></code> (Opcional)</li>
+<li>Npm <code class="docutils literal notranslate"><span class="pre">v</span> <span class="pre">3.10.10</span></code> (Opcional)</li>
+<li>Gulp <code class="docutils literal notranslate"><span class="pre">v</span> <span class="pre">2.0.0</span></code> (Opcional)</li>
+</ul>
+</div>
+<div class="section" id="instalacion">
+<h2>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="repositorio">
+<h3>Repositorio<a class="headerlink" href="#repositorio" title="Permalink to this headline">¶</a></h3>
+<p>Asumiendo que se tiene el ambiente de desarrollo configurado sólo se necitará lanzar el siguiente comando dentro del servidor de desarrollo en la carpeta principal de la aplicación.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /var/www/html/dramis
+</pre></div>
+</div>
+<p>Si no se cuenta con el repositorio ven_develop se deberá crear una rama a partir de la rama remota del mismo con el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout -b ven_develop origin/ven_develop
+</pre></div>
+</div>
+<p>Esto hará que se obtenga la rama <code class="docutils literal notranslate"><span class="pre">ven_develop</span></code> en el repositorio local.</p>
+<p>Si, ya se cuenta con la rama <code class="docutils literal notranslate"><span class="pre">ven_develop</span></code> sólo se lanzará lanzará el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull
+</pre></div>
+</div>
+<p>El comando obtendrá los cambios realizados en la rama <code class="docutils literal notranslate"><span class="pre">ven_develop</span></code></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">La versión del repositorio debe ser <code class="docutils literal notranslate"><span class="pre">ven_develop</span></code></p>
+</div>
+</div>
+<div class="section" id="node-opcional">
+<h3>Node (Opcional)<a class="headerlink" href="#node-opcional" title="Permalink to this headline">¶</a></h3>
+<p>Para instalar node en el sistema siga los pasos de su  <a class="reference external" href="https://nodejs.org/es/download/package-manager/">página oficial</a>
+Node <code class="docutils literal notranslate"><span class="pre">v</span> <span class="pre">6.12.3</span></code></p>
+</div>
+<div class="section" id="npm-opcional">
+<h3>Npm (Opcional)<a class="headerlink" href="#npm-opcional" title="Permalink to this headline">¶</a></h3>
+<p>Para instalar npm de manera global siga los pasos en su <a class="reference external" href="https://www.npmjs.com/get-npm">página oficial</a> ó ejecute el siguiente comando para realizar una instalación global</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm install npm@latest -g
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="actualizacion-base-de-datos">
+<h2>Actualización base de Datos<a class="headerlink" href="#actualizacion-base-de-datos" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="authorizations">
+<h3>authorizations<a class="headerlink" href="#authorizations" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="ss">`authorizations`</span>
+<span class="k">ADD</span> <span class="k">COLUMN</span> <span class="ss">`followupdate`</span> <span class="kt">DATETIME</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span> <span class="n">AFTER</span> <span class="ss">`referral_id`</span><span class="p">,</span>
+<span class="k">ADD</span> <span class="k">COLUMN</span> <span class="ss">`statusDate`</span> <span class="kt">DATETIME</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span> <span class="n">AFTER</span> <span class="ss">`followupdate`</span><span class="p">,</span>
+<span class="k">ADD</span> <span class="k">COLUMN</span> <span class="ss">`reqDate`</span> <span class="kt">DATETIME</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span> <span class="n">AFTER</span> <span class="ss">`statusDate`</span><span class="p">,</span>
+<span class="k">ADD</span> <span class="k">COLUMN</span> <span class="ss">`supervisor`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">245</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span> <span class="n">AFTER</span> <span class="ss">`reqDate`</span><span class="p">,</span>
+<span class="k">ADD</span> <span class="k">COLUMN</span> <span class="ss">`provider`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">245</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span> <span class="n">AFTER</span> <span class="ss">`supervisor`</span><span class="p">,</span>
+<span class="k">ADD</span> <span class="k">COLUMN</span> <span class="ss">`created_by`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">245</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span> <span class="n">AFTER</span> <span class="ss">`provider`</span><span class="p">,</span>
+<span class="k">ADD</span> <span class="k">COLUMN</span> <span class="ss">`worked_date`</span> <span class="kt">DATETIME</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span> <span class="n">AFTER</span> <span class="ss">`created_by`</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="section" id="fields">
+<h4>fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>form_type <code class="docutils literal notranslate"><span class="pre">(read)</span></code></p>
+<p>authorization <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>total_units_left <code class="docutils literal notranslate"><span class="pre">(read)</span></code></p>
+<p>end_date <code class="docutils literal notranslate"><span class="pre">(read)</span></code></p>
+<p>patient_id <code class="docutils literal notranslate"><span class="pre">(read)</span></code></p>
+<p>insurance_id <code class="docutils literal notranslate"><span class="pre">(read)</span></code></p>
+<p>status <code class="docutils literal notranslate"><span class="pre">(read)</span></code></p>
+<p>updated_at <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>updated_by <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>auth_comments <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>referral_id <code class="docutils literal notranslate"><span class="pre">(read)</span></code></p>
+<p>followupdate <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>statusDate <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>reqDate <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>created_by <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>worked_date <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="referrals-new">
+<h3>referrals (new)<a class="headerlink" href="#referrals-new" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="ss">`referrals`</span> <span class="p">(</span>
+<span class="ss">`id`</span> <span class="kt">BIGINT</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">NOT</span> <span class="no">NULL</span> <span class="kp">AUTO_INCREMENT</span><span class="p">,</span>
+<span class="ss">`first_name`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`last_name`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`full_name`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`parental_guardian_name`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`date`</span> <span class="kt">DATETIME</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span> <span class="n">COMMENT</span> <span class="s1">&#39;referral_date&#39;</span><span class="p">,</span>
+<span class="ss">`dob_date`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`sex`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`ethnic`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`race`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`ssn`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`home_phone`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`cell_phone`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`preferred_phone`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`county`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`address`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`city`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`state`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+</pre></div>
+</div>
+<div class="section" id="id2">
+<h4>fields<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>all fields <code class="docutils literal notranslate"><span class="pre">(read/write)</span></code></p>
+<p>id <code class="docutils literal notranslate"><span class="pre">bigint(20)</span> <span class="pre">AI</span> <span class="pre">PK</span></code></p>
+<p>first_name <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>last_name <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>full_name <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>parental_guardian_name <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>date <code class="docutils literal notranslate"><span class="pre">datetime</span></code></p>
+<p>dob_date <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>sex <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>ethnic <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>race <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>ssn <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>home_phone <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>cell_phone <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>preferred_phone <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>county <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>address <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>city <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>state <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>zip_code <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>language_preference <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>school <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>grade <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>ese <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>client_id <code class="docutils literal notranslate"><span class="pre">bigint(20)</span></code></p>
+<p>service_required <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>reason_for_referral <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>other <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>current_treatment <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
+<p>previous_treatment <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
+<p>diagnosis <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
+<p>medications <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
+<p>physician_name <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>physician_phone <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>physician_fax <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>comments <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
+<p>insurance_info <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>insurance_id <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>insurance_other_id <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>referral_full_name <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>referral_agency <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>email <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>referral_phone <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>referral_fax <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>referral_requested_therapist  <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>referral_taken_by <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>reviewed <code class="docutils literal notranslate"><span class="pre">tinyint(2)</span></code></p>
+<p>worked <code class="docutils literal notranslate"><span class="pre">tinyint(2)</span></code></p>
+<p>eligible <code class="docutils literal notranslate"><span class="pre">tinyint(2)</span></code></p>
+<p>created_at <code class="docutils literal notranslate"><span class="pre">timestamp</span></code></p>
+<p>updated_at <code class="docutils literal notranslate"><span class="pre">timestamp</span></code></p>
+<p>needy_service <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>closed <code class="docutils literal notranslate"><span class="pre">tinyint(2)</span></code></p>
+<p>referral_comments <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
+<p>client_type <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>creation_assigned_to <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>creation_date <code class="docutils literal notranslate"><span class="pre">datetime</span></code></p>
+<p>patient_id <code class="docutils literal notranslate"><span class="pre">int(50)</span></code></p>
+<p>evaluationReq <code class="docutils literal notranslate"><span class="pre">tinyint(2)</span></code></p>
+<p>TherapyCenter <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>TherapyCenterSAssignedDate <code class="docutils literal notranslate"><span class="pre">datetime</span></code></p>
+<p>verified_by <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>created_by_user <code class="docutils literal notranslate"><span class="pre">tinyint(2)</span></code></p>
+<p>referred_by <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="referral-services-new-all-fields-read-write">
+<h3>referral_services (new) all fields read/write<a class="headerlink" href="#referral-services-new-all-fields-read-write" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="ss">`referral_services`</span> <span class="p">(</span>
+<span class="ss">`id`</span> <span class="kt">BIGINT</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">NOT</span> <span class="no">NULL</span> <span class="kp">AUTO_INCREMENT</span><span class="p">,</span>
+<span class="ss">`name`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">145</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="ss">`prefix`</span> <span class="kt">VARCHAR</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span> <span class="no">NULL</span> <span class="k">DEFAULT</span> <span class="no">NULL</span><span class="p">,</span>
+<span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="ss">`id`</span><span class="p">),</span>
+<span class="k">UNIQUE</span> <span class="k">INDEX</span> <span class="ss">`name_UNIQUE`</span> <span class="p">(</span><span class="ss">`name`</span> <span class="k">ASC</span><span class="p">),</span>
+<span class="k">UNIQUE</span> <span class="k">INDEX</span> <span class="ss">`prefix_UNIQUE`</span> <span class="p">(</span><span class="ss">`prefix`</span> <span class="k">ASC</span><span class="p">));</span>
+</pre></div>
+</div>
+<div class="section" id="id3">
+<h4>fields<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>id <code class="docutils literal notranslate"><span class="pre">bigint(20)</span> <span class="pre">AI</span> <span class="pre">PK</span></code></p>
+<p>name <code class="docutils literal notranslate"><span class="pre">varchar(145)</span></code></p>
+<p>prefix <code class="docutils literal notranslate"><span class="pre">varchar(45)</span></code></p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="patient-staff-assignment-all-fields-read">
+<h3>patient_staff_assignment all fields read<a class="headerlink" href="#patient-staff-assignment-all-fields-read" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h4>fields<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>patient_staff_id <code class="docutils literal notranslate"><span class="pre">int(12)</span> <span class="pre">AI</span> <span class="pre">PK</span></code></p>
+<p>patient_id <code class="docutils literal notranslate"><span class="pre">int(12)</span></code></p>
+<p>staff_id <code class="docutils literal notranslate"><span class="pre">int(12)</span></code></p>
+<p>staff_title <code class="docutils literal notranslate"><span class="pre">varchar(250)</span></code></p>
+<p>status <code class="docutils literal notranslate"><span class="pre">int(1)</span></code></p>
+<p>treatment <code class="docutils literal notranslate"><span class="pre">int(1)</span></code></p>
+<p>trans_id <code class="docutils literal notranslate"><span class="pre">int(11)</span></code></p>
+<p>assigned_by <code class="docutils literal notranslate"><span class="pre">varchar(45)</span></code></p>
+<p>date <code class="docutils literal notranslate"><span class="pre">timestamp</span></code></p>
+</div></blockquote>
+</div>
+<div class="section" id="insurance-companies-all-fields-read">
+<h4>insurance_companies all fields read<a class="headerlink" href="#insurance-companies-all-fields-read" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>id <code class="docutils literal notranslate"><span class="pre">int(11)</span> <span class="pre">AI</span> <span class="pre">PK</span></code></p>
+<p>name <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>attn <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p>
+<p>cms_id <code class="docutils literal notranslate"><span class="pre">varchar(15)</span></code></p>
+<p>freeb_type <code class="docutils literal notranslate"><span class="pre">tinyint(2)</span></code></p>
+<p>x12_receiver_id <code class="docutils literal notranslate"><span class="pre">varchar(25)</span></code></p>
+<p>x12_default_partner_id <code class="docutils literal notranslate"><span class="pre">int(11)</span></code></p>
+<p>alt_cms_id <code class="docutils literal notranslate"><span class="pre">varchar(15)</span></code></p>
+</div></blockquote>
+</div>
+<div class="section" id="patient-data-all-fields-read">
+<h4>patient_data all fields read<a class="headerlink" href="#patient-data-all-fields-read" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="modificacion-de-base-de-datos-alters">
+<h3>Modificación de base de datos (alters)<a class="headerlink" href="#modificacion-de-base-de-datos-alters" title="Permalink to this headline">¶</a></h3>
+<p>Se ha resuelto agregar un campo en la base de datos llamado “disabled” en la tabla “authorizations”. Con este nuevo ajuste se podrá lograr el funcionamiento esperado. A continuación se presenta el query de este cambio</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="o">`</span><span class="n">authorizations</span><span class="o">`</span>
+<span class="k">ADD</span> <span class="k">COLUMN</span> <span class="o">`</span><span class="n">disabled</span><span class="o">`</span> <span class="n">TINYINT</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">NULL</span> <span class="k">DEFAULT</span> <span class="mi">0</span> <span class="k">AFTER</span> <span class="o">`</span><span class="n">worked_date</span><span class="o">`</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="inventario-de-archivos-modificados">
+<h2>Inventario de archivos modificados<a class="headerlink" href="#inventario-de-archivos-modificados" title="Permalink to this headline">¶</a></h2>
+<p>En esta versión se proporcina la lista de los siguientes archivos modificados:</p>
+<div class="line-block">
+<div class="line-block">
+<div class="line">html/</div>
+</div>
+<div class="line">├─ api/</div>
+<div class="line">│ ├─ <code class="docutils literal notranslate"><span class="pre">index.php</span></code></div>
+<div class="line">│ ├─ controllers/</div>
+<div class="line">│ ├── <code class="docutils literal notranslate"><span class="pre">Authorization.php</span></code></div>
+<div class="line">│ ├── <code class="docutils literal notranslate"><span class="pre">ClinicReferral.php</span></code></div>
+<div class="line">│ ├── <code class="docutils literal notranslate"><span class="pre">WpFormController.php</span></code></div>
+<div class="line">│ ├─ models/</div>
+<div class="line">│ ├── <code class="docutils literal notranslate"><span class="pre">Authorization.php</span></code></div>
+<div class="line">│ ├── <code class="docutils literal notranslate"><span class="pre">Patient.php</span></code></div>
+<div class="line">│ ├── <code class="docutils literal notranslate"><span class="pre">Staff.php</span></code></div>
+<div class="line">│ ├── <code class="docutils literal notranslate"><span class="pre">ReferralService.php</span></code> (Nuevo)</div>
+<div class="line">│ └── <code class="docutils literal notranslate"><span class="pre">Referral.php</span></code> (Nuevo)</div>
+<div class="line">│</div>
+<div class="line">├─ interface/</div>
+<div class="line">│ ├─ patient_file/</div>
+<div class="line">│ │ ├─ summary/</div>
+<div class="line">│ │ ├── <code class="docutils literal notranslate"><span class="pre">authorizations_full.php</span></code></div>
+<div class="line">│ │ └── <code class="docutils literal notranslate"><span class="pre">record_authorization.php</span></code></div>
+<div class="line">│ │</div>
+<div class="line">│ ├─ main/</div>
+<div class="line">│ │ └── <code class="docutils literal notranslate"><span class="pre">left_nav.php</span></code></div>
+<div class="line">│ ├─ wp_forms/</div>
+<div class="line">└ └──── <code class="docutils literal notranslate"><span class="pre">*</span></code></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Las descripciones de los códigos actualizados se podrán observar en el historial de git.</p>
+</div>
+</div>
+<div class="section" id="frontend-compiler">
+<h2>FrontEnd Compiler<a class="headerlink" href="#frontend-compiler" title="Permalink to this headline">¶</a></h2>
+<p>El frontend se ha recompilado con el gestor de tareas gulp, este proceso totalmente opcional y se realiza en tal caso cuando al hacer un <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> el servidor no reconozca los cambios del frontend.</p>
+<p>Los motivos por los que se ha utilizado dicho gestor es debido a que cuando los archivos <code class="docutils literal notranslate"><span class="pre">.js</span></code> en la carpeta <code class="docutils literal notranslate"><span class="pre">/var/www/html/dramis/html/interface/wp_forms/js</span></code> eran modificados, el servidor no detectaba los cambios.</p>
+<p>Se decidió usar gulp para generar una nueva versión del archivo y obligar al servidor que liste el nuevo archivo.</p>
+<p>El proceso consiste en que el gestor de tareas gulp genera un <code class="docutils literal notranslate"><span class="pre">rev-manifest.json</span></code> en la carpeta  <code class="docutils literal notranslate"><span class="pre">/var/www/html/dramis/html/interface/wp_forms/assets</span></code></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;app.js&quot;</span><span class="o">:</span> <span class="s2">&quot;app-0806c0cadf.js&quot;</span><span class="p">,</span>
+<span class="s2">&quot;camdComponent.js&quot;</span><span class="o">:</span> <span class="s2">&quot;camdComponent-80bd8a0091.js&quot;</span><span class="p">,</span>
+<span class="s2">&quot;cbhssamComponent.js&quot;</span><span class="o">:</span> <span class="s2">&quot;cbhssamComponent-f99c929ecf.js&quot;</span><span class="p">,</span>
+<span class="s2">&quot;csamComponent.js&quot;</span><span class="o">:</span> <span class="s2">&quot;csamComponent-c9e1291a62.js&quot;</span><span class="p">,</span>
+<span class="s2">&quot;referraldetails.js&quot;</span><span class="o">:</span> <span class="s2">&quot;referraldetails-493f1167ff.js&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>En este ejemplo se puede observar un json de tipo <code class="docutils literal notranslate"><span class="pre">key-value</span></code> donde:</p>
+<ul class="simple">
+<li>key: representa el nombre del archivo modificado. <code class="docutils literal notranslate"><span class="pre">&quot;app.js&quot;</span></code></li>
+<li>value: representa la versión del archivo. <code class="docutils literal notranslate"><span class="pre">&quot;app-0806c0cadf.js&quot;</span></code></li>
+</ul>
+<p>En la carpera <code class="docutils literal notranslate"><span class="pre">wp_forms</span></code> vienen incluidos los archivos de configuración del gestor de tareas <code class="docutils literal notranslate"><span class="pre">gulp</span></code>. Estos archivos son:</p>
+<ul class="simple">
+<li>gulpfile.js (archivo de configuración)</li>
+<li>package.json (gestor de paquetes)</li>
+</ul>
+<p>En caso de que se requiera compilar los archivos <code class="docutils literal notranslate"><span class="pre">.js</span></code> localizados en wp_forms/js/* en primera instacia se deberá activar la instalación de gulp mediante npm ejecutando el siguiente comando detro de la carpeta <code class="docutils literal notranslate"><span class="pre">wp_forms</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm install --save
+</pre></div>
+</div>
+<p>Esto hará que se descarguen todas las depenencias necesarias a nivel local para que el gestor de tareas gulp funcione.</p>
+<p>Después de activar la instalación sólo se deberá ejecutar el siguiente comando para compilar los archivos js modificados</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm run build
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules.html" class="btn btn-neutral float-right" title="Modules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="DRAMIS Referrals Authorizations Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Ing. Elvis Reyes.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
