@@ -136,3 +136,47 @@ Backend
     .. code-block:: bash
 
         npm run build
+
+
+
+************************************************
+CBHS Subsequent Authorizations Management (Corrigiendo funcionalidades)
+************************************************
+
+.. image:: _static/cbhssm.gif
+
+Requisitos iniciales
+====================
+
+* Este dashboard debe presentar todas las autorizaciones que no estén atadas a un referido y que tengan cualquier estatus menos activa e inactiva
+* La autorización en el “dashboard” debe tener un link que lleve directo a las autorizaciones del paciente
+* El “dashboard” debe estar dividido por especialidad TCM, PSR, MHC
+* Las columnas que debe tener son las siguientes
+* Debemos poder ver todas las transacciones por localidad de ser necesario (Davenport, St.Cloud) (Es una columna adicional o un filtro )
+* Poner como editable todas las columnas que se puedan editar y que los cambios puedan actualizar el récord del paciente.
+
+Correciones
+===========
+
+
+* Columna de “auth requested date” no va en este dashboar
+* Faltaron las siguientes columnas “units left, “end date” y “worked date”
+
+
+Se presentan los archivos incolucrados en estla correción de este dashboard.
+
+FrontEnd
+---------
+
+  * ``html/interface/wp_forms/assets/rev-manifest.json```
+  * ``html/interface/wp_forms/index.php```
+  * ``/html/interface/wp_forms/js/view-components/cbhssamComponent.js```
+
+
+
+.. note:: 
+    Si se desea compilar los archivos del FrontEnd deberá ejecutarse el siguiente comando en la carpeta ``/html/interface/wp_forms/```
+
+    .. code-block:: bash
+
+        npm run build

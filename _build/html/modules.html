@@ -111,6 +111,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#cbhs-subsequent-authorizations-management-corrigiendo-funcionalidades">CBHS Subsequent Authorizations Management (Corrigiendo funcionalidades)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Requisitos iniciales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#correciones">Correciones</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">FrontEnd</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -303,6 +311,46 @@
 <li><code class="docutils literal notranslate"><span class="pre">/html/api/index.php`</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">/html/api/controllers/WpFormController.php`</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">/html/api/modeles/Authorization.php`</span></code></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Si se desea compilar los archivos del FrontEnd deberá ejecutarse el siguiente comando en la carpeta <code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/`</span></code></p>
+<div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span>npm run build
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="cbhs-subsequent-authorizations-management-corrigiendo-funcionalidades">
+<h2>CBHS Subsequent Authorizations Management (Corrigiendo funcionalidades)<a class="headerlink" href="#cbhs-subsequent-authorizations-management-corrigiendo-funcionalidades" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/cbhssm.gif" src="_images/cbhssm.gif" />
+<div class="section" id="id7">
+<h3>Requisitos iniciales<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Este dashboard debe presentar todas las autorizaciones que no estén atadas a un referido y que tengan cualquier estatus menos activa e inactiva</li>
+<li>La autorización en el “dashboard” debe tener un link que lleve directo a las autorizaciones del paciente</li>
+<li>El “dashboard” debe estar dividido por especialidad TCM, PSR, MHC</li>
+<li>Las columnas que debe tener son las siguientes</li>
+<li>Debemos poder ver todas las transacciones por localidad de ser necesario (Davenport, St.Cloud) (Es una columna adicional o un filtro )</li>
+<li>Poner como editable todas las columnas que se puedan editar y que los cambios puedan actualizar el récord del paciente.</li>
+</ul>
+</div>
+<div class="section" id="correciones">
+<h3>Correciones<a class="headerlink" href="#correciones" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Columna de “auth requested date” no va en este dashboar</li>
+<li>Faltaron las siguientes columnas “units left, “end date” y “worked date”</li>
+</ul>
+<p>Se presentan los archivos incolucrados en estla correción de este dashboard.</p>
+<div class="section" id="id8">
+<h4>FrontEnd<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">html/interface/wp_forms/assets/rev-manifest.json`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">html/interface/wp_forms/index.php`</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">/html/interface/wp_forms/js/view-components/cbhssamComponent.js`</span></code></li>
 </ul>
 </div></blockquote>
 <div class="admonition note">
