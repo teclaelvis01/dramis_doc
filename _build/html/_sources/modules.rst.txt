@@ -159,7 +159,7 @@ Correciones
 ===========
 
 
-* Columna de “auth requested date” no va en este dashboar
+* Columna de “auth requested date” no va en este dashboard
 * Faltaron las siguientes columnas “units left, “end date” y “worked date”
 
 
